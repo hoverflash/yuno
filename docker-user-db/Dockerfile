@@ -4,7 +4,7 @@ FROM postgres:9.4
 # ------------------------------------------------------------
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
-ENV POSTGRES_DB biller_webview
+ENV POSTGRES_DB USER
 
 # Copy sql schema & data for DB switching
 # ------------------------------------------------------------

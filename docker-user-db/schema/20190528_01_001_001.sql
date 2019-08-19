@@ -44,11 +44,12 @@ SET default_with_oids = false;
 -- Name: inquiry; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE "USER" (
+CREATE TABLE USERDATA (
   id uuid DEFAULT uuid_generate_v4() NOT NULL,
   "name" varchar(256),
   "username" varchar(256),
   "password" varchar(256),
+  "pin" varchar(256),
   "email" varchar(256),
   "phone_country_code" varchar(2),
   "phone" varchar(256),
@@ -58,8 +59,8 @@ CREATE TABLE "USER" (
   "additional_data_2" varchar(256),
   "additional_data_3" varchar(256),
   "additional_data_4" varchar(256),
-  "created_datetime" datetime,
-  "lastupdated_datetime" datetime,
+  "created_datetime" timestamp,
+  "lastupdated_datetime" timestamp,
   "state" varchar(50),
   "status" boolean
 );
